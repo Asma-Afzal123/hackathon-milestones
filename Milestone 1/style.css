@@ -1,0 +1,117 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px;
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 30px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid #e63946;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 5px solid #e63946;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center;
+    color: #2c2c2c;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 5px;
+    color: white;
+    background-color: #e63946;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* softer shadow */
+}
+
+p, ul, li {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: disc; /* Valid value */
+    padding-left: 20px; /* Proper padding */
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 30px;
+    width: 65%;
+    background-color: #f9f9f9;
+}
+
+/* Button Styling */
+button {
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-radius: 10px;
+    background-color: #e63946;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ff737c;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+
+    .left-section {
+        border-right: none;
+        border-bottom: 5px solid #e63946;
+    }
+}
